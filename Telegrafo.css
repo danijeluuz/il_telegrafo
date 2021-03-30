@@ -17,6 +17,12 @@ p{
   padding: 0;
 }
 
+
+.header:hover .nascosto{
+  transition: opacity 0.5s;
+  opacity: 100;
+}
+
 .grigliaHeader {
   margin: 0;
   max-width: 100vw;
@@ -38,19 +44,15 @@ p{
 
 }
 
-
 .cella {
   font-family: Telegraf Regular;
   color:#d9d9d9;
 }
 
-
-
 .morse{
   font-family: 'Morse Code';
   font-size: 3vw;
 }
-
 
 /*titolo*/
 .header {
@@ -68,15 +70,9 @@ p{
   text-decoration: none;
 }
 
-.header:hover .nascosto{
-  transition: opacity 0.5s;
-  opacity: 100;
-}
-
 .nascosto{
   opacity: 0;
 }
-
 
 /*spazi vuoti*/
 .vuoto1{
@@ -104,7 +100,7 @@ p{
 .testo{
   grid-column: span 5;
   font-size: 1.5vw;
-  line-height: 1.25;
+  line-height: 1.3;
 
 }
 
@@ -117,24 +113,56 @@ p{
   margin-top: 0.4em;
 }
 
-
-
 .didascalia{
   color: #d9d9d9;
   font-size: 1vw;
   font-family: Telegraf Regular;
   line-height: 1.25em;
   padding-top: 1em;
+
+}
+
+.didascalia2{
+  grid-column: span 2;
+  font-size: 1vw;
+  font-family: Telegraf Regular;
+  line-height: 1.25em;
+}
+
+
+.dateTimeline{
+  grid-column: span 2;
+  font-size: 2vw;
+}
+
+.didascaliaTimeline{
+  grid-column: span 2;
+  font-size: 1vw;
+  font-family: Telegraf Regular;
+  line-height: 1.25em;
 }
 
 .adattaImmagine{
-    width: 100%;
-    height: 60%;
-    object-fit: cover;
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.adattaImmagine1{
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+}
+
+.adattaImmagineTimeline{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
 }
 
 
-@media (max-width:1300px){
+@media (max-width:600px){
 
   .grigliaHeader{
     max-width: initial;
@@ -160,7 +188,7 @@ p{
   .header {
     grid-column: span 12;
     /*border: 1px solid rgb(0, 153, 255);*/
-    font-size: 3vw;
+    font-size: 2.5vw;
     column-count: span 2;
     column-gap: 0em;
   }
@@ -168,8 +196,12 @@ p{
   .testo{
     grid-column: span 11;
     margin-left: 5em;
+    line-height: 1.5;
   }
 
+    .dateTimeline{
+      font-size: 1em;
+    }
 
 }
 

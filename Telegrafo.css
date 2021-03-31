@@ -104,7 +104,7 @@ p{
   opacity: 0;
 }
 
-/*spazi vuoti*/
+/*spazi*/
 .vuoto1{
   grid-column: span 1;
 }
@@ -162,7 +162,10 @@ p{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  
+}
+
+.vuoto{
+  grid-column: span 10;
 }
 
 /*testi*/
@@ -181,6 +184,17 @@ p{
   margin-top: 0.4em;
   grid-column: span 10;
 }
+
+.sottotitolo1{
+  color: #d9d9d9;
+  font-size: 2vw;
+  font-family: 'Space Grotesk', 'sans-serif';
+  font-weight: 500;
+  line-height: 1.25em;
+  margin-top: 0.4em;
+  grid-column: span 5;
+}
+
 
 .didascalia{
   color: #d9d9d9;
@@ -240,6 +254,11 @@ p{
   }
 
   .foto1{
+    grid-column: span 10;
+    height: 150%;
+  }
+
+  .foto3{
     grid-column: span 10;
     height: 150%;
   }

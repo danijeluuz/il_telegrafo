@@ -47,6 +47,33 @@ p{
   width: 100%;
   max-width: 2vw;
   height: auto;
+  
+}
+
+input{
+  width: 100%;
+  border: 0.5px solid white;
+  background-color: black;
+  color: white; 
+  font-size: 2.25vw;
+  font-family: 'Space Grotesk', 'sans-serif';
+  font-weight: 500;
+  line-height: 1.25em; 
+  padding:0.5em;
+}
+
+.box{
+  text-align: unset;
+  width: 100%;
+  min-height: 5em;
+  border: 0.5px solid white;
+  background-color: black;
+  color: white;
+  font-size: 2.25vw;
+  font-family: 'Space Grotesk', 'sans-serif';
+  font-weight: 500;
+  line-height: 1.25em;
+  padding:0.5em;
 }
 
 /*griglie*/
@@ -68,6 +95,17 @@ p{
   grid-column-gap: 1em;
   grid-row-gap: 1em;
   margin-bottom: 1em;
+}
+
+.griglia2 {
+  margin: 1em 1em;
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  margin-bottom: 1em;
+  max-height: 100px;
 }
 
 .cella {
@@ -105,35 +143,40 @@ p{
 }
 
 /*spazi*/
-.vuoto1{
+.spazio1{
   grid-column: span 1;
 }
-
-.vuoto4{
+.spazio2{
+  grid-column: span 2;
+}
+.spazio3{
+  grid-column: span 3;
+}
+.spazio4{
   grid-column: span 4;
 }
-
-.vuoto6{
+.spazio5{
+  grid-column: span 5;
+}
+.spazio6{
   grid-column: span 6;
 }
-
-.vuoto12{
-  grid-column: span 12;
-  margin-bottom: 3em;
+.spazio8{
+  grid-column: span 8;
 }
-
-/*fotografie*/
-.foto1{
-  grid-column: span 4;
-}
-
-.foto2{
+.spazio10{
   grid-column: span 10;
 }
 
-.foto3{
-  grid-column: span 5;
+.spazio12{
+  grid-column: span 12;
 }
+
+
+
+
+/*fotografie*/
+
 
 .adattaImmagine{
   width: 100%;
@@ -164,9 +207,6 @@ p{
   object-fit: cover;
 }
 
-.vuoto{
-  grid-column: span 10;
-}
 
 /*testi*/
 .testo{
@@ -215,11 +255,13 @@ p{
 }
 
 .didascalia3{
-  grid-column: span 5;
+  grid-column: span 10;
   font-size: 1vw;
   font-family: 'Space Grotesk', 'sans-serif';
   font-weight: 300;
   line-height: 1.25em;
+  column-count: 2;
+  column-gap: 1em;
 }
 
 .dateTimeline{

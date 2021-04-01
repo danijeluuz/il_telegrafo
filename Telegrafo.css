@@ -293,7 +293,6 @@ input{
   .griglia1{
     max-width: initial;
     display: relative;
-    grid-column: span 6;
   }
 
   .foto1{
@@ -327,6 +326,10 @@ input{
     .dateTimeline{
       font-size: 1em;
     }
+
+  .adattaImmagine{
+    grid-column: span 10;
+  }
 
 }
 
